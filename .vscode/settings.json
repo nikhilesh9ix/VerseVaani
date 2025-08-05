@@ -1,0 +1,17 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "afterDelay",
+    "python.defaultInterpreterPath": ".venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "uv.venv.mode": "venv",
+    "[python]": {
+      "editor.defaultFormatter": "charliermarsh.ruff",
+      "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit",
+        "source.organizeImports": "explicit"
+      }
+    },
+    "ruff.args": ["--fix"],
+    "ruff.lint.args": ["--fix"],
+    "ruff.format.args": ["--preview"],
+  }
