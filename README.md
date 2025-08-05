@@ -90,7 +90,7 @@
 
 ## 🪪 License
 
-- **Code:** MIT
+- **Code:** GNU AFFERO GENERAL PUBLIC LICENSE
 - **Model:** Hosted via OpenRouter (open-access)
 
 ---
