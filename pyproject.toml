@@ -1,0 +1,9 @@
+[project]
+name = "versevaani"
+version = "0.1.0"
+description = "A Sanskrit shloka explainer"
+requires-python = ">=3.9"
+dependencies = [
+  "streamlit",
+  "requests",
+]
