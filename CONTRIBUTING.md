@@ -28,34 +28,122 @@ To get a local copy of the project running, follow these simple steps.
 
 1.  **Fork and Clone:** Fork the repository on GitLab and clone your fork to your local machine.
     ```bash
-    git clone [https://code.swecha.org/nikhilesh9ix/versevaani.git](https://code.swecha.org/nikhilesh9ix/versevaani.git)
+    git clone https://code.swecha.org/nikhilesh9ix/versevaani.git
     cd versevaani
     ```
 
-2.  **Install Dependencies:** We use `uv` for dependency management. Install the required packages with:
+2.  **Install uv:** We use `uv` for fast Python package management. Install it first:
     ```bash
-    uv pip install -r requirements.txt
+    # On macOS and Linux
+    curl -LsSf https://astral.sh/uv/install.sh | sh
+    
+    # On Windows
+    powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
+    
+    # Or with pip
+    pip install uv
     ```
 
-3.  **Set up Environment:** You will need an OpenRouter API key.
+3.  **Set up Development Environment:** Use our development scripts:
+    ```bash
+    # Unix/Linux/macOS
+    make dev
+    
+    # Windows PowerShell
+    .\dev.ps1 dev
+    ```
+
+4.  **Set up Environment Variables:** You will need an OpenRouter API key.
     - Go to [OpenRouter.ai](https://openrouter.ai) to get your API key.
     - Create a `.env` file in the root of the project and add your key:
-    ```
+    ```env
     OPENROUTER_API_KEY=sk-or-...
     ```
 
-4.  **Run the App:** Start the Streamlit application from your terminal:
+5.  **Run Tests:** Ensure everything works:
     ```bash
-    streamlit run streamlit_app.py
+    # Unix/Linux/macOS
+    make test
+    
+    # Windows PowerShell
+    .\dev.ps1 test
+    ```
+
+6.  **Run the App:** Start the Streamlit application:
+    ```bash
+    # Unix/Linux/macOS
+    make run
+    
+    # Windows PowerShell
+    .\dev.ps1 run
     ```
 
 ## 📜 Contribution Workflow
 
+### Development Workflow
+
 1.  Create a new branch for your changes: `git checkout -b feature/my-cool-feature`.
-2.  Make your changes and commit them with a descriptive message: `git commit -m "feat: add my cool feature"`.
-3.  Push your branch to your forked repository: `git push origin feature/my-cool-feature`.
-4.  Open a new Merge Request on the main repository and describe your changes.
+2.  Make your changes following our code standards (see below).
+3.  Format and lint your code:
+    ```bash
+    # Unix/Linux/macOS
+    make format
+    make lint
+    
+    # Windows PowerShell
+    .\dev.ps1 format
+    .\dev.ps1 lint
+    ```
+4.  Run tests to ensure everything works:
+    ```bash
+    # Unix/Linux/macOS
+    make test
+    
+    # Windows PowerShell
+    .\dev.ps1 test
+    ```
+5.  Commit your changes with a descriptive message: `git commit -m "feat: add my cool feature"`.
+6.  Push your branch to your forked repository: `git push origin feature/my-cool-feature`.
+7.  Open a new Merge Request on the main repository and describe your changes.
+
+### Code Standards
+
+We use **Ruff** for code formatting and linting. Please ensure your code follows these standards:
+
+- **Formatting**: Run `make format` or `.\dev.ps1 format` before committing
+- **Linting**: Run `make lint` or `.\dev.ps1 lint` to check for issues
+- **Type Hints**: Add type hints to all function parameters and return values
+- **Docstrings**: Document all classes and methods with Google-style docstrings
+- **Testing**: Add tests for new functionality
+
+### Available Commands
+
+We provide convenient commands for development:
+
+```bash
+# Unix/Linux/macOS (using Makefile)
+make help           # Show all available commands
+make install        # Install production dependencies
+make install-dev    # Install development dependencies
+make format         # Format code with Ruff
+make lint           # Lint code with Ruff and MyPy
+make test           # Run tests
+make test-cov       # Run tests with coverage
+make clean          # Clean cache files
+make run            # Run the application
+make check          # Run format + lint + test
+make ci             # Run CI pipeline
+
+# Windows (using PowerShell script)
+.\dev.ps1 help      # Show all available commands
+.\dev.ps1 install   # Install production dependencies
+.\dev.ps1 install-dev # Install development dependencies
+.\dev.ps1 format    # Format code with Ruff
+.\dev.ps1 lint      # Lint code with Ruff and MyPy
+.\dev.ps1 test      # Run tests
+.\dev.ps1 run       # Run the application
+```
 
 ## 🪪 License
 
-By contributing, you agree that your contributions will be licensed under the GNU AFFERO GENERAL PUBLIC LICENSE, which is the same license used by this project.
+By contributing, you agree that your contributions will be licensed under the same GNU Affero General Public License v3.0 that covers the project.

@@ -4,21 +4,175 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "versevaani"
-version = "0.1.0"
-description = "A Sanskrit shloka explainer"
+version = "0.2.0"
+description = "A Sanskrit shloka explainer with AI-powered insights"
+readme = "README.md"
+license = {text = "AGPL-3.0"}
+authors = [
+    {name = "VerseVaani Team", email = "contact@versevaani.org"}
+]
+keywords = ["sanskrit", "ai", "spiritual", "education", "streamlit"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Education",
+    "License :: OSI Approved :: GNU Affero General Public License v3",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Education",
+    "Topic :: Religion",
+    "Topic :: Text Processing :: Linguistic",
+]
 requires-python = ">=3.9"
 dependencies = [
-  "streamlit",
-  "requests",
+    "streamlit>=1.28.0",
+    "requests>=2.31.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+test = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
 ]
 
 [project.scripts]
 versevaani = "streamlit_app:main"
 
+[project.urls]
+Homepage = "https://github.com/nikhilesh9ix/versevaani"
+Documentation = "https://github.com/nikhilesh9ix/versevaani#readme"
+Repository = "https://github.com/nikhilesh9ix/versevaani"
+"Bug Tracker" = "https://github.com/nikhilesh9ix/versevaani/issues"
+"Hugging Face Space" = "https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani"
+
 [tool.uv]
-pip-compile = { requirements = ["requirements.txt"] }
+dev-dependencies = [
+    "pytest>=7.4.0",
+    "pytest-cov>=4.1.0",
+    "ruff>=0.1.0",
+    "mypy>=1.5.0",
+]
+
+[tool.ruff]
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".bzr",
+    ".direnv", 
+    ".eggs",
+    ".git",
+    ".git-rewrite",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".pytype",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+]
+
+# Same as Black.
+line-length = 88
+indent-width = 4
+
+# Assume Python 3.9+
+target-version = "py39"
+
+[tool.ruff.lint]
+# Enable pycodestyle (`E`) and Pyflakes (`F`) codes by default.
+select = ["E", "F", "W", "I", "UP"]
+ignore = [
+    "D100", # Missing docstring in public module
+    "D104", # Missing docstring in public package
+    "D107", # Missing docstring in __init__
+    "D200", # One-line docstring should fit on one line
+    "D205", # 1 blank line required between summary line and description
+    "COM812", # Trailing comma missing
+    "ISC001", # Implicitly concatenated string literals on one line
+    "S101", # Use of assert detected (ok in tests)
+    "PLR2004", # Magic value used in comparison
+    "PLR0911", # Too many return statements
+    "C901", # Function is too complex
+    "G004", # Logging statement uses f-string
+    "TRY300", # Consider moving statement to else block
+    "TRY400", # Use logging.exception instead of logging.error
+    "BLE001", # Do not catch blind exception
+    "RUF001", # String contains ambiguous character
+    "RUF005", # Consider unpacking instead of concatenation
+    "E501", # Line too long (will be handled by formatter)
+    "W291", # Trailing whitespace (will be handled by formatter)
+    "W293", # Blank line contains whitespace (will be handled by formatter)
+]
+
+# Allow fix for all enabled rules (when `--fix`) is provided.
+fixable = ["ALL"]
+unfixable = []
+
+# Allow unused variables when underscore-prefixed.
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+# Enable additional rules
+extend-select = ["I"]  # isort
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+known-first-party = ["config", "api_client", "utils"]
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+# Like Black, respect magic trailing commas.
+skip-magic-trailing-comma = false
+
+# Like Black, automatically detect the appropriate line ending.
+line-ending = "auto"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["versevaani"]
+include = ["versevaani*"]
 namespaces = false
+
+[tool.pytest.ini_options]
+testpaths = [".", "tests"]
+python_files = ["test_*.py", "*_test.py"]
+python_classes = ["Test*"]
+python_functions = ["test_*"]
+addopts = [
+    "--verbose",
+    "--tb=short",
+    "--strict-markers",
+]
+markers = [
+    "slow: marks tests as slow",
+    "integration: marks tests as integration tests",
+    "unit: marks tests as unit tests",
+]
+
+[tool.mypy]
+python_version = "3.12"
+warn_return_any = false
+warn_unused_configs = true
+disallow_untyped_defs = false
+ignore_missing_imports = true
