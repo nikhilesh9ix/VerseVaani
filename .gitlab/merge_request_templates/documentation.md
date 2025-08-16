@@ -1,32 +1,43 @@
----
-name: Documentation Update 📚
-about: Use this template for merge requests related to documentation changes.
-title: "DOCS: "
-labels: ["documentation"]
-assignees: ''
+## 📚 Documentation Pull Request
 
----
+### 📝 Documentation Changes
+Brief description of what documentation is being added or improved.
 
-### 📝 Description
+### 🔗 Related Issue
+Closes #(issue number)
 
-A clear and concise description of the documentation changes made.
+### 📍 Files Changed
+List the documentation files being modified:
+- [ ] README.md
+- [ ] CONTRIBUTING.md
+- [ ] Code comments
+- [ ] API documentation
+- [ ] Setup guides
+- [ ] Other: ___________
 
-### 🔗 Related Issue(s) (Optional)
+### 🎯 Target Audience
+Who will benefit from these documentation changes?
+- [ ] New contributors
+- [ ] End users
+- [ ] Developers
+- [ ] System administrators
+- [ ] Other: ___________
 
-Relates to #<!-- Replace with issue number if this MR addresses a documentation issue -->
+### 📋 Type of Documentation Update
+- [ ] New documentation
+- [ ] Fixing errors/typos
+- [ ] Improving clarity
+- [ ] Adding examples
+- [ ] Restructuring content
+- [ ] Updating outdated information
 
-### 🛠️ Changes Made
+### 📋 Checklist
+- [ ] Documentation is clear and concise
+- [ ] Examples are accurate and tested
+- [ ] Links are working correctly
+- [ ] Formatting is consistent
+- [ ] Spelling and grammar checked
+- [ ] Screenshots/diagrams updated if needed
 
--   [List specific changes, e.g., "Updated installation steps in README.md"]
--   [Added new section on API key setup]
-
-### ✅ How to Review
-
-Steps to review the documentation changes:
-
-1.  [Step 1]
-2.  [Step 2]
-
-### ❓ Additional Context
-
-Add any other context here.
+### 🔍 Review Notes
+Any specific areas that need reviewer attention or context for the changes.

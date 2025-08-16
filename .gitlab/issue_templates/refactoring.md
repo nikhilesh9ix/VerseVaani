@@ -1,24 +1,72 @@
 ---
-name: Refactoring 🧹
-about: Suggest code refactoring or structural improvements.
+name: Refactoring Proposal 🔧
+about: Propose code refactoring or architectural improvements
 title: "[REFACTOR] "
-labels: ["refactor"]
+labels: ["refactoring", "technical-debt"]
 assignees: ''
-
 ---
 
-### 📝 Description of Refactoring Need
+## 🔧 Refactoring Proposal
 
-A clear and concise description of the code or structure that needs refactoring and why. (e.g., "This function is too long," "This module has too many responsibilities," "The variable names are unclear").
+Describe the current code that needs refactoring:
 
-### 🎯 Goal of Refactoring
+## 📍 Location
 
-What do you hope to achieve with this refactoring? (e.g., improved readability, better performance, easier maintenance, reduced complexity).
+Where is the code that needs refactoring?
 
-### 💡 Proposed Changes (Optional)
+- **Files**: [e.g., api_client.py, utils.py]
+- **Functions/Classes**: [e.g., OpenRouterClient.send_message()]
+- **Line numbers**: [if applicable]
 
-If you have specific ideas for how the refactoring could be done, describe them here.
+## ❌ Current Issues
 
-### ❓ Additional Context
+What problems exist with the current implementation?
 
-Add any other context here.
+- [ ] Code duplication
+- [ ] Poor performance
+- [ ] Hard to understand
+- [ ] Hard to test
+- [ ] Hard to maintain
+- [ ] Security concerns
+- [ ] Other: ___________
+
+## ✅ Proposed Solution
+
+Describe your proposed refactoring approach:
+
+## 🎯 Benefits
+
+What benefits will this refactoring provide?
+
+- [ ] Improved readability
+- [ ] Better performance
+- [ ] Easier testing
+- [ ] Reduced technical debt
+- [ ] Better maintainability
+- [ ] Enhanced security
+- [ ] Other: ___________
+
+## 🔄 Breaking Changes
+
+Will this refactoring introduce breaking changes?
+
+- [ ] Yes - Please describe below
+- [ ] No - Backward compatible
+
+If yes, describe the breaking changes and migration path:
+
+## 📋 Implementation Plan
+
+Outline the steps for implementing this refactoring:
+
+1. Step 1: ...
+2. Step 2: ...
+3. Step 3: ...
+
+## 📊 Priority
+
+How important is this refactoring?
+
+- [ ] Low - Technical debt cleanup
+- [ ] Medium - Improves development experience
+- [ ] High - Critical for performance/security

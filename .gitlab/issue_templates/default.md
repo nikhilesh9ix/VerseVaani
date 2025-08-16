@@ -1,20 +1,19 @@
 ---
-name: Default Issue 📝
-about: General issue template for anything that doesn't fit other categories.
+name: General Issue
+about: For issues that don't fit other categories
 title: ""
-labels: ["enhancement"]
+labels: []
 assignees: ''
-
 ---
 
-### 📝 Issue Description
+## 📝 Issue Description
 
-A clear and concise description of the issue or topic.
+Please provide a clear and concise description of the issue or question.
 
-### 💡 Proposed Solution/Approach (Optional)
+## 🔄 Context
 
-If you have an idea for how this issue could be resolved or what steps might be taken, please describe it here.
+Please provide any relevant context or background information.
 
-### ❓ Additional Context
+## 📋 Additional Information
 
-Add any other context or information here.
+Add any other information, screenshots, or examples that might be helpful.

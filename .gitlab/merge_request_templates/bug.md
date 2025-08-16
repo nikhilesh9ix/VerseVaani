@@ -1,32 +1,40 @@
----
-name: Bug Fix 🐛
-about: Use this template for merge requests that fix a bug.
-title: "FIX: "
-labels: ["bug", "fix"]
-assignees: ''
+## 🐛 Bug Fix Pull Request
 
----
+### 📝 Bug Description
+Brief description of the bug this PR fixes.
 
-### 📝 Description
+### 🔗 Related Issue
+Fixes #(issue number)
 
-A clear and concise description of the bug that was fixed.
+### 🔄 Root Cause
+What was causing the bug?
 
-### 🔗 Related Issue(s)
+### 🛠️ Solution
+How does this PR fix the bug?
 
-Closes #<!-- Replace with the issue number that this MR fixes -->
+### 🧪 Testing
+- [ ] Added/updated unit tests
+- [ ] Manual testing completed
+- [ ] Regression testing performed
+- [ ] Edge cases tested
 
-### 🛠️ Changes Made
+**Test scenarios covered:**
+- [ ] Scenario 1: ...
+- [ ] Scenario 2: ...
+- [ ] Scenario 3: ...
 
-Briefly describe the technical changes you made to resolve the bug.
+### 📋 Checklist
+- [ ] Bug fix doesn't introduce new issues
+- [ ] Code follows project style guidelines
+- [ ] Added appropriate error handling
+- [ ] Updated documentation if needed
+- [ ] All tests pass locally
 
-### ✅ How to Test
+### 🔄 Breaking Changes
+- [ ] No breaking changes
+- [ ] Contains breaking changes (describe below)
 
-Steps to verify the bug fix:
+If breaking changes, describe migration path:
 
-1.  [Step 1]
-2.  [Step 2]
-3.  [Step 3]
-
-### 📸 Screenshots (if applicable)
-
-Add screenshots or GIFs demonstrating the fix.
+### 📸 Screenshots/Evidence
+Before and after screenshots or logs demonstrating the fix.

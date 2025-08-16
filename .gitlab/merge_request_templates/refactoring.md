@@ -1,32 +1,68 @@
----
-name: Refactoring 🧹
-about: Use this template for merge requests focused on code refactoring or structural improvements.
-title: "REFACTOR: "
-labels: ["refactor"]
-assignees: ''
+## 🔧 Refactoring Pull Request
 
----
+### 📝 Refactoring Description
+Brief description of what code is being refactored and why.
 
-### 📝 Description
+### 🔗 Related Issue
+Closes #(issue number)
 
-A clear and concise description of the refactoring performed.
+### 📍 Code Location
+Which parts of the codebase are being refactored?
 
-### 🔗 Related Issue(s) (Optional)
+- **Files modified:**
+- **Functions/Classes affected:**
+- **Lines of code impacted:**
 
-Relates to #<!-- Replace with refactoring issue number if applicable -->
+### ❌ Current Problems
+What issues with the current code does this refactoring address?
 
-### 🎯 Goal of Refactoring
+- [ ] Code duplication
+- [ ] Poor performance
+- [ ] Hard to understand
+- [ ] Hard to test
+- [ ] Hard to maintain
+- [ ] Security concerns
+- [ ] Technical debt
+- [ ] Other: ___________
 
-What was the primary goal of this refactoring? (e.g., improved readability, better performance, easier maintenance, reduced complexity).
+### ✅ Improvements Made
+What benefits does this refactoring provide?
 
-### 🛠️ Changes Made
+- [ ] Improved readability
+- [ ] Better performance
+- [ ] Easier testing
+- [ ] Reduced technical debt
+- [ ] Better maintainability
+- [ ] Enhanced security
+- [ ] Code reusability
+- [ ] Other: ___________
 
-Detail the specific code changes and why they were made.
+### 🧪 Testing
+- [ ] All existing tests still pass
+- [ ] New tests added for refactored code
+- [ ] Behavior verification completed
+- [ ] Performance testing (if applicable)
+- [ ] Edge cases retested
 
-### ✅ How to Test
+### 🔄 Breaking Changes
+- [ ] No breaking changes - fully backward compatible
+- [ ] Contains breaking changes (describe below)
 
-Provide steps to ensure the refactoring did not introduce regressions.
+If breaking changes, describe migration path:
 
-### ❓ Additional Context
+### 📊 Impact Assessment
+- **Performance impact:** [None/Improved/Degraded]
+- **Memory usage:** [No change/Reduced/Increased]
+- **API changes:** [None/Added/Modified/Removed]
 
-Add any other context here.
+### 📋 Refactoring Checklist
+- [ ] Code functionality remains unchanged
+- [ ] All tests pass
+- [ ] Code follows project style guidelines
+- [ ] Documentation updated if needed
+- [ ] No new bugs introduced
+- [ ] Performance maintained or improved
+- [ ] Security not compromised
+
+### 🔍 Review Focus Areas
+Specific areas that need careful review or testing attention.

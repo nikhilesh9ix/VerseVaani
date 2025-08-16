@@ -1,24 +1,48 @@
 ---
-name: Documentation Update 📚
-about: Suggest improvements or report issues related to documentation.
+name: Documentation Improvement 📚
+about: Suggest improvements to documentation
 title: "[DOCS] "
 labels: ["documentation"]
 assignees: ''
-
 ---
 
-### 📝 Description of Documentation Issue/Suggestion
+## 📚 Documentation Issue
 
-A clear and concise description of the problem with the current documentation or the new content you'd like to add.
+Describe what documentation needs improvement:
 
-### 🔗 Relevant Document/Section
+- [ ] README.md
+- [ ] CONTRIBUTING.md
+- [ ] Code comments
+- [ ] API documentation
+- [ ] Setup instructions
+- [ ] Other: ___________
 
-Please provide a link to the specific documentation page or section (if applicable).
+## 📍 Location
 
-### 💡 Proposed Changes/Additions
+Where is the documentation that needs improvement?
 
-Describe what changes you suggest or what new content should be added.
+- **File**: [e.g., README.md, config.py]
+- **Section**: [e.g., Installation, API Reference]
+- **Line numbers**: [if applicable]
 
-### ❓ Additional Context
+## ❌ Current State
 
-Add any other context here.
+Describe what's currently unclear, missing, or incorrect:
+
+## ✅ Proposed Improvement
+
+Describe what you think should be changed or added:
+
+## 👥 Target Audience
+
+Who would benefit from this documentation improvement?
+
+- [ ] New contributors
+- [ ] End users
+- [ ] Developers
+- [ ] System administrators
+- [ ] Other: ___________
+
+## 📋 Additional Context
+
+Add any other context, examples, or screenshots about the documentation improvement here.

@@ -1,36 +1,55 @@
----
-name: Feature Implementation ✨
-about: Use this template for merge requests that implement new features.
-title: "FEAT: "
-labels: ["feature"]
-assignees: ''
+## ✨ Feature Pull Request
 
----
+### 📝 Feature Description
+Brief description of the new feature being added.
 
-### 📝 Description
+### 🔗 Related Issue
+Closes #(issue number)
 
-A clear and concise description of the new feature implemented.
+### 💡 Motivation
+Why is this feature needed? What problem does it solve?
 
-### 🔗 Related Issue(s)
+### 🛠️ Implementation Details
+High-level overview of how the feature is implemented:
 
-Closes #<!-- Replace with the feature request issue number this MR implements -->
+- **New files added:**
+- **Existing files modified:**
+- **Dependencies added:**
 
-### 🛠️ Technical Design/Implementation Details
+### 🧪 Testing
+- [ ] Unit tests added for new functionality
+- [ ] Integration tests updated
+- [ ] Manual testing completed
+- [ ] Performance testing (if applicable)
+- [ ] Edge cases tested
 
-Explain the technical approach taken to implement this feature.
+**Test scenarios covered:**
+- [ ] Happy path: ...
+- [ ] Error cases: ...
+- [ ] Edge cases: ...
 
-### ✅ How to Test
+### 📋 Feature Checklist
+- [ ] Feature works as described
+- [ ] Code follows project style guidelines
+- [ ] Documentation updated
+- [ ] Examples added (if applicable)
+- [ ] Backward compatibility maintained
+- [ ] Error handling implemented
+- [ ] Performance considerations addressed
 
-Steps to test the new feature:
+### 🔄 Breaking Changes
+- [ ] No breaking changes
+- [ ] Contains breaking changes (describe below)
 
-1.  [Step 1]
-2.  [Step 2]
-3.  [Step 3]
+If breaking changes, describe migration path:
 
-### 📸 Screenshots (if applicable)
+### 📊 Performance Impact
+- [ ] No performance impact
+- [ ] Performance improved
+- [ ] Minor performance impact (acceptable)
+- [ ] Significant performance impact (needs discussion)
 
-Add screenshots or GIFs demonstrating the new feature.
+Details (if applicable):
 
-### ❓ Additional Context
-
-Add any other context here.
+### 📸 Screenshots/Demo
+Screenshots or GIFs demonstrating the new feature in action.
