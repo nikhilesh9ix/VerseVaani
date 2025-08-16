@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.2.1] - 2025-08-16
+
+### Added
+- **VS Code Integration**: Added Ruff extension to recommended extensions
+- **Development Environment**: Enhanced VS Code configuration with proper settings, launch, and tasks
+- **GitHub Integration**: Updated all documentation to reference GitHub repository instead of GitLab
+
+### Enhanced
+- **Documentation**: Completely rewritten CONTRIBUTING.md with comprehensive development guidelines
+- **Development Workflow**: Improved documentation for cross-platform development setup
+- **Code Quality**: Enhanced VS Code settings for automatic formatting and linting
+
 ## [0.2.0] - 2025-08-14
 
 ### Added
