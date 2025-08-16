@@ -47,10 +47,10 @@ test = [
 versevaani = "streamlit_app:main"
 
 [project.urls]
-Homepage = "https://github.com/nikhilesh9ix/versevaani"
-Documentation = "https://github.com/nikhilesh9ix/versevaani#readme"
-Repository = "https://github.com/nikhilesh9ix/versevaani"
-"Bug Tracker" = "https://github.com/nikhilesh9ix/versevaani/issues"
+Homepage = "https://code.swecha.org/nikhilesh9ix/versevaani"
+Documentation = "https://code.swecha.org/nikhilesh9ix/versevaani#readme"
+Repository = "https://code.swecha.org/nikhilesh9ix/versevaani"
+"Bug Tracker" = "https://code.swecha.org/nikhilesh9ix/versevaani/-/issues"
 "Hugging Face Space" = "https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani"
 
 [tool.uv]

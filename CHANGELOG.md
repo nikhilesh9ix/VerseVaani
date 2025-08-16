@@ -5,7 +5,7 @@
 ### Added
 - **VS Code Integration**: Added Ruff extension to recommended extensions
 - **Development Environment**: Enhanced VS Code configuration with proper settings, launch, and tasks
-- **GitHub Integration**: Updated all documentation to reference GitHub repository instead of GitLab
+- **GitLab Integration**: Updated all documentation to reference GitLab repository as primary
 
 ### Enhanced
 - **Documentation**: Completely rewritten CONTRIBUTING.md with comprehensive development guidelines

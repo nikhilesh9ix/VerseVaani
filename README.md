@@ -73,7 +73,7 @@
 
 2. **Clone the repository:**
    ```bash
-   git clone https://github.com/yourusername/versevaani.git
+   git clone https://code.swecha.org/nikhilesh9ix/versevaani.git
    cd versevaani
    ```
 
@@ -295,8 +295,8 @@ versevaani/
 ## 📣 Community & Support
 
 ### Getting Help
-- 📧 **Issues**: [GitHub Issues](https://github.com/yourusername/versevaani/issues)
-- 💬 **Discussions**: [GitHub Discussions](https://github.com/yourusername/versevaani/discussions)
+- 📧 **Issues**: [GitLab Issues](https://code.swecha.org/nikhilesh9ix/versevaani/-/issues)
+- 💬 **Discussions**: [GitLab Discussions](https://code.swecha.org/nikhilesh9ix/versevaani/-/merge_requests)
 - 📱 **Community**: Join our Sanskrit learning community
 
 ### Feedback

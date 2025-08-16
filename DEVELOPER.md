@@ -262,7 +262,7 @@ streamlit run streamlit_app.py
 
 ### Streamlit Cloud Deployment
 
-1. Push code to GitHub
+1. Push code to GitLab
 2. Connect to Streamlit Cloud
 3. Add API key to secrets
 4. Deploy
@@ -326,4 +326,4 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed contribution guidelines.
 
 ---
 
-For questions or support, please check the [GitHub Issues](https://github.com/nikhilesh9ix/versevaani/issues).
+For questions or support, please check the [GitLab Issues](https://code.swecha.org/nikhilesh9ix/versevaani/-/issues).

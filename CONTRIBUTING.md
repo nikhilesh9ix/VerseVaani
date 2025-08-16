@@ -8,12 +8,12 @@ There are many ways to contribute to VerseVaani, whether you are a developer, a 
 
 ### 🐛 Report Bugs
 
-- If you find a bug, please check the [Issues](https://github.com/nikhilesh9ix/VerseVaani/issues) to see if it has already been reported.
+- If you find a bug, please check the [Issues](https://code.swecha.org/nikhilesh9ix/versevaani/-/issues) to see if it has already been reported.
 - If not, open a new issue with a clear title and description. Include as much detail as possible to help us reproduce the bug.
 
 ### ✨ Suggest Features
 
-- We love new ideas! Check our [Issues](https://github.com/nikhilesh9ix/VerseVaani/issues) or existing discussions to see if your idea is already planned.
+- We love new ideas! Check our [Issues](https://code.swecha.org/nikhilesh9ix/versevaani/-/issues) or existing discussions to see if your idea is already planned.
 - If not, feel free to open a new issue describing the new feature and why you think it would be valuable.
 
 ### 🧑‍💻 Code Contributions
@@ -29,11 +29,11 @@ There are many ways to contribute to VerseVaani, whether you are a developer, a 
 
 To get a local copy of the project running, follow these simple steps.
 
-1. **Fork and Clone:** Fork the repository on GitHub and clone your fork to your local machine.
+1. **Fork and Clone:** Fork the repository on GitLab and clone your fork to your local machine.
 
    ```bash
-   git clone https://github.com/YOUR_USERNAME/VerseVaani.git
-   cd VerseVaani
+   git clone https://code.swecha.org/YOUR_USERNAME/versevaani.git
+   cd versevaani
    ```
 
 2. **Install uv:** We use `uv` for fast Python package management. Install it first:
@@ -92,7 +92,7 @@ To get a local copy of the project running, follow these simple steps.
 3. Test your changes: `./dev.ps1 test` or `make test`.
 4. Format and lint your code: `./dev.ps1 format` or `make format`.
 5. Commit your changes with a descriptive message.
-6. Push to your fork and create a Pull Request on GitHub.
+6. Push to your fork and create a Merge Request on GitLab.
 
 ## 🎯 Code Standards
 
