@@ -42,9 +42,6 @@ ENV/
 .streamlit/
 .streamlit/secrets.toml
 
-# uv
-uv.lock
-
 # IDEs
 .vscode/
 !.vscode/extensions.json
