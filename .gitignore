@@ -39,7 +39,6 @@ ENV/
 .env.production
 
 # Streamlit specific
-.streamlit/
 .streamlit/secrets.toml
 
 # IDEs
