@@ -5,11 +5,11 @@
 [![Python Version](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/downloads/)
 [![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
 [![Code style: ruff](https://img.shields.io/badge/code%20style-ruff-000000.svg)](https://github.com/astral-sh/ruff)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://versevaani.streamlit.app)
 
 **An AI-powered assistant for exploring Sanskrit wisdom through poetic translation, word analysis, and spiritual context**
 
-[Live Demo](https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani) · [Report Bug](https://github.com/nikhilesh9ix/VerseVaani/issues) · [Request Feature](https://github.com/nikhilesh9ix/VerseVaani/issues)
+[Live Demo](https://versevaani.streamlit.app) · [Report Bug](https://github.com/nikhilesh9ix/VerseVaani/issues) · [Request Feature](https://github.com/nikhilesh9ix/VerseVaani/issues)
 
 </div>
 
@@ -52,7 +52,7 @@
 
 ### Live Demo
 Try VerseVaani instantly without installation:
-👉 **[https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani](https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani)**
+👉 **[https://versevaani.streamlit.app](https://versevaani.streamlit.app)**
 
 ### Local Installation
 
@@ -127,7 +127,7 @@ The app will open in your browser at `http://localhost:8501`
 | **Testing** | pytest with 100% coverage |
 | **Code Quality** | ruff (formatter + linter), mypy (type checking) |
 | **Package Management** | uv (ultra-fast pip replacement) |
-| **Deployment** | Hugging Face Spaces, Railway, Render, Vercel |
+| **Deployment** | Streamlit Cloud, Hugging Face Spaces, Railway, Render |
 
 ---
 
@@ -349,23 +349,24 @@ OPENROUTER_API_KEY = "sk-or-v1-..."
 
 VerseVaani can be deployed to multiple platforms:
 
-### Hugging Face Spaces (Recommended)
+### Streamlit Cloud (Recommended)
 ```bash
-# Already deployed at: https://huggingface.co/spaces/Nikhilesh9ix/VerseVaani
+# Already deployed at: https://versevaani.streamlit.app
 
 # To deploy your own:
+1. Fork this repository
+2. Go to share.streamlit.io
+3. Deploy from GitHub
+4. Add OPENROUTER_API_KEY in App Settings → Secrets
+```
+
+### Hugging Face Spaces
+```bash
+# Alternative deployment option
 1. Create account on huggingface.co
 2. Create new Space with Streamlit
 3. Push repository to Space
 4. Add OPENROUTER_API_KEY in Settings → Secrets
-```
-
-### Streamlit Cloud
-```bash
-1. Fork this repository
-2. Go to share.streamlit.io
-3. Deploy from GitHub
-4. Add secrets in Advanced Settings
 ```
 
 ### Railway
@@ -487,7 +488,7 @@ make test    # Ensure tests pass
 ### Current Metrics
 - ⚡ **Response Time**: 2-5 seconds average (depends on OpenRouter load)
 - 🎯 **Sanskrit Detection**: 98%+ accuracy (Devanagari + IAST)
-- 🛡️ **Uptime**: 99.5%+ (Hugging Face Spaces)
+- 🛡️ **Uptime**: 99.5%+ (Streamlit Cloud)
 - 📱 **Mobile Support**: Fully responsive on all devices
 - 🔒 **Error Handling**: 100% coverage of API error scenarios
 
@@ -509,8 +510,8 @@ Thank you to all developers, testers, and supporters who have contributed to Ver
 - 🙏 **Ancient Sanskrit Scholars**: Whose wisdom we aim to make accessible
 - 🌐 **OpenRouter**: For providing easy access to open-source AI models
 - 🤖 **Mistral AI**: For the excellent Mistral-7B model
-- 🎨 **Streamlit**: For the beautiful UI framework
-- 💼 **Hugging Face**: For free hosting of the demo
+- 🎨 **Streamlit**: For the beautiful UI framework and cloud hosting
+- 💼 **Hugging Face**: For supporting open-source ML community
 - 🌟 **Open Source Community**: For tools, libraries, and inspiration
 
 ### Cultural Respect
